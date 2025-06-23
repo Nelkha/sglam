@@ -129,7 +129,7 @@ export default function Home() {
           <h4 className="text-neon-green font-bold mb-4 text-xl">Instagram Feed</h4>
           <div className="w-full h-[500px] bg-gray-800 rounded-lg overflow-hidden flex items-center justify-center text-gray-400">
             <iframe
-              src="http://lightwidget.com/widgets/288f5d52a9d253ebb099cef314226756.html"
+              src="https://lightwidget.com/widgets/288f5d52a9d253ebb099cef314226756.html"
               scrolling="no"
               allowtransparency="true"
               className="w-full h-full border-0"
