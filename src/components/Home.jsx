@@ -54,7 +54,7 @@ export default function Home() {
       <section className="w-full mb-12">
         <div className="relative w-full aspect-[16/9] overflow-hidden bg-gradient-to-br from-black to-gray-800 border-b-2 border-neon-green">
           <iframe
-            src="https://www.youtube.com/embed/jjuZga0W5ps"
+            src="https://www.youtube.com/embed/3XOrFJX88cY"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
