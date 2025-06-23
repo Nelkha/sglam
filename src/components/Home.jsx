@@ -155,13 +155,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* Título principal */}
-      <div className="w-full max-w-4xl mb-12 px-4 text-center">
-        <span className="text-lg sm:text-2xl font-bold text-white select-none whitespace-nowrap">
-          SGLAM <span className="text-[#ff00f7]">STUDIOS</span>
-        </span>
-      </div>
     </motion.div>
   );
 }
