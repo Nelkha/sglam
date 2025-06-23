@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@layer utilities {
+  .text-neon-green {
+    color: #39FF14;
+  }
+
+  .bg-neon-green {
+    background-color: #39FF14;
+  }
+
+  .text-neon-pink {
+    color: #ff00f7;
+  }
+
+  .bg-neon-pink {
+    background-color: #ff00f7;
+  }
+
+  .border-neon-green {
+    border-color: #39FF14;
+  }
+
+  .from-neon-pink {
+    --tw-gradient-from: #ff00f7;
+    --tw-gradient-to: rgb(255 0 247 / 0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+
+  .to-neon-green {
+    --tw-gradient-to: #39FF14;
+  }
+}
