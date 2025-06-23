@@ -18,8 +18,8 @@ export default function Navbar() {
         <div className="w-16 sm:w-24" />
         {/* Título centrado */}
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-          <span className="text-lg sm:text-2xl font-bold text-white select-none whitespace-nowrap">
-            SGLAM <span className="text-[#ff00f7]">STUDIOS</span>
+          <span className="text-lg sm:text-2xl font-bold select-none whitespace-nowrap">
+            <span className="text-neon-green">SGLAM</span> <span className="text-[#ff00f7]">STUDIOS</span>
           </span>
         </div>
         {/* Botón hamburguesa */}
