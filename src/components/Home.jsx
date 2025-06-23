@@ -73,12 +73,17 @@ export default function Home() {
         />
       </div>
 
+      {/* Pregunta sobre los artistas */}
+      <h2 className="w-full text-3xl sm:text-4xl font-extrabold text-center text-neon-green mb-8 px-4 drop-shadow">
+        ¿Qué artistas podés escuchar hoy?
+      </h2>
+
       {/* Cards de artistas destacados (más altas) */}
       <div className="w-full max-w-6xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-16 px-4">
-        {[1, 2, 3, 4].map((i) => (
+        {[1, 2, 3].map((i) => (
           <motion.div
             key={i}
-            className="bg-white/5 border border-neon-green rounded-2xl p-4 flex flex-col items-center shadow-lg h-[500px] justify-between relative overflow-hidden"
+            className="bg-white/5 border border-neon-green rounded-2xl p-4 flex flex-col items-center shadow-lg h-[420px] justify-between relative overflow-hidden"
             initial={{ x: 0 }}
             animate={{
               x: [0, -0.5, 0.5, -0.5, 0.5, 0],
@@ -120,6 +125,36 @@ export default function Home() {
             </div>
           </motion.div>
         ))}
+        {/* Flecha grande, fuera del card, con animación y estilo destacado */}
+        <div className="relative flex items-center justify-center h-[420px]">
+          <motion.div
+            initial={{ scale: 1, x: 0 }}
+            animate={{
+              scale: [1, 1.15, 1],
+              x: [0, 10, 0],
+              boxShadow: [
+                "0 0 0px 0px #39FF14",
+                "0 0 32px 8px #39FF14",
+                "0 0 0px 0px #39FF14"
+              ],
+              transition: { duration: 1.5, repeat: Infinity, repeatType: "loop" }
+            }}
+            className="rounded-full bg-black border-4 border-neon-green shadow-xl flex items-center justify-center p-4"
+            style={{ boxShadow: "0 0 32px 8px #39FF14" }}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-24 h-24 text-neon-green"
+              fill="none"
+              viewBox="0 0 64 64"
+              stroke="currentColor"
+              strokeWidth={6}
+              style={{ filter: "drop-shadow(0 0 16px #39FF14)" }}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M24 16l16 16-16 16" />
+            </svg>
+          </motion.div>
+        </div>
       </div>
 
       {/* Contenedor verde neón con feed y lista, más alto */}
